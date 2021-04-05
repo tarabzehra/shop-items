@@ -62,8 +62,8 @@ mongoose.connect(process.env.DB_CONNECTION,
     { useNewUrlParser: true },
     () => { console.log('connected to database') });
 
-http.createServer(app).listen(process.env.PORT || 5000, function () {
+http.createServer(app).listen(process.env.PORT || 3000, function () {
 
-    console.log('Example app listening on port', process.env.PORT || 5000)
+    console.log('Example app listening on port', process.env.PORT || 3000)
 
 })

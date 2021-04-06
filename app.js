@@ -63,6 +63,7 @@ mongoose.connect(process.env.DB_CONNECTION,
     () => { console.log('connected to database') });
 
 http.createServer(app).listen(process.env.PORT || 3000, function () {
+    console.log(process.env.PORT);
 
     console.log('Example app listening on port', process.env.PORT || 3000)
 
